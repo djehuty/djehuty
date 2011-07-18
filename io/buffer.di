@@ -1,3 +1,10 @@
+module io.buffer;
+
+import io.stream;
+
+/*
+This class represents a byte stream.
+*/
 class Buffer {
 public:
 
