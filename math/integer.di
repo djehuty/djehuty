@@ -1,7 +1,9 @@
+module math.integer;
+
 /*
 This class represents an arbitrary precision integer value.
 */
-class Integer {
+final class Integer {
 public:
 
 	/*
@@ -13,6 +15,11 @@ public:
 	This constructor will create a new integer, initialized to the given value.
 	*/
 	this(ulong value, ulong[] values...);
+
+	/*
+	This constuctor will create a new copy of the given integer.
+	*/
+	this(Integer value);
 
 	// Properties //
 

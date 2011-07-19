@@ -5,7 +5,7 @@ import io.stream;
 /*
 This class represents a byte stream.
 */
-class Buffer {
+final class Buffer {
 public:
 
 	/*
@@ -97,4 +97,6 @@ public:
 	*/
 	void append(ubyte[] data);
 	void append(Stream buffer, size_t length);
+
+	void seek(long offset);
 }

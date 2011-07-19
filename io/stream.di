@@ -3,14 +3,13 @@ module io.stream;
 /*
 This class represents a data stream of arbitrary bytes.
 */
-class Stream {
+final class Stream {
 public:
 
 	/*
 	This constructor will create an unattached stream.
 	*/
-	this() {
-	}
+	this();
 
 	/*
 	This constructor will create a stream attached to predefined functions.
