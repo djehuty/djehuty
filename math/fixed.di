@@ -1,3 +1,5 @@
+module math.fixed;
+
 /*
 This class provides a fixed point arithmetic type.
 */

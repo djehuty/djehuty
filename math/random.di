@@ -1,3 +1,5 @@
+module math.random;
+
 /*
 This class provides a uniformly distributed random number generator.
 */

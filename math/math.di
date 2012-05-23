@@ -1,3 +1,5 @@
+module math.math;
+
 /*
 This class provides common mathematical functions.
 */
