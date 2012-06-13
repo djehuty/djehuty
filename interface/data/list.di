@@ -20,7 +20,7 @@ public:
    *  of values.
    * values: A list of values that will represent the constructed list.
    */
-  this(void*[] values...);
+  this(void*[] values);
 
   // Properties //
 
