@@ -21,7 +21,7 @@ public:
    *  of values.
    * values: A list of values that will represent the constructed list.
    */
-  this(void*[] values...);
+  this(void*[] values);
 
   // Properties //
 
@@ -49,6 +49,7 @@ public:
   void* remove();
 
   /* Remove and yield the value at the given position.
+   * atIndex: The index of the element to remove.
    * Returns: The value at position atIndex.
    */
   void* remove(long atIndex);
@@ -60,6 +61,7 @@ public:
   void set(long atIndex, void* value);
 
   /* Returns the element at the given index.
+   * index: The index of the element to retrieve.
    * Returns: The given element.
    */
   void* get(ulong index);
