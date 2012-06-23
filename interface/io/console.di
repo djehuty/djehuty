@@ -2,6 +2,8 @@ module io.console;
 
 import io.stream;
 
+import drawing.color;
+
 /* This class represents a stream that interacts with the console input
  * and output.
  */
@@ -23,6 +25,18 @@ final class Console {
   /* A stream that supports both read and write operations.
    */
   Stream stream();
+
+  /* The color for rendering the text in this console.
+   * This change will be reflected in future writes to the console.
+   */
+  Color foregroundColor();
+  void foregroundColor(Color value);
+
+  /* The color for rendering the area behind text in this console.
+   * This change will be reflected in future writes to the console.
+   */
+  Color backgroundColor();
+  void backgroundColor(Color value);
 
   // Methods //
 
