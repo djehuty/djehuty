@@ -3,6 +3,9 @@ module chrono.date_time;
 import chrono.month;
 import chrono.weekday;
 
+import chrono.date;
+import chrono.time;
+
 final class DateTime {
 public:
   /* Constructs a new object that represents midnight on January 1st, 2000.
@@ -41,6 +44,14 @@ public:
   /* The month represented by this date.
    */
   Month month();
+
+  /* The date portion represented by this point in time.
+   */
+  Date date();
+
+  /* The time portion represented by this date.
+   */
+  Time time();
 
   /* The day of the month represented by this date.
    */
