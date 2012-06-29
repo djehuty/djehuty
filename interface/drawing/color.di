@@ -84,9 +84,45 @@ public:
    */
   static Color DarkGray();
 
+  /* Yields an object representing the color of a very dark gray.
+   */
+  static Color DarkestGray();
+
+  /* Yields an object representing the color of a very light gray.
+   */
+  static Color LightestGray();
+
   /* Yields an object representing the color black.
    */
   static Color Black();
+
+  /* Yields an object representing the color light red.
+   */
+  static Color LightRed();
+
+  /* Yields an object representing the color light green.
+   */
+  static Color LightGreen();
+
+  /* Yields an object representing the color light blue.
+   */
+  static Color LightBlue();
+
+  /* Yields an object representing the color light yellow.
+   */
+  static Color LightYellow();
+
+  /* Yields an object representing the color light magenta.
+   */
+  static Color LightMagenta();
+
+  /* Yields an object representing the color light cyan.
+   */
+  static Color LightCyan();
+
+  /* Yields an object representing the color light gray.
+   */
+  static Color LightGray();
 
   // Properties //
 
