@@ -29,14 +29,14 @@ final class Console {
   /* The color for rendering the text in this console.
    * This change will be reflected in future writes to the console.
    */
-  Color foregroundColor();
-  void foregroundColor(Color value);
+  Color forecolor();
+  void forecolor(Color value);
 
   /* The color for rendering the area behind text in this console.
    * This change will be reflected in future writes to the console.
    */
-  Color backgroundColor();
-  void backgroundColor(Color value);
+  Color backcolor();
+  void backcolor(Color value);
 
   // Methods //
 
