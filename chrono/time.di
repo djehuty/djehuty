@@ -1,5 +1,7 @@
 module chrono.time;
 
+/* This object represents a clock time.
+ */
 final class Time {
 public:
   /* Constructs an object that represents midnight.

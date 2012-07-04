@@ -6,6 +6,9 @@ import chrono.weekday;
 import chrono.date;
 import chrono.time;
 
+/* This object represents a point in time by both a calendar date and a clock
+ *  time.
+ */
 final class DateTime {
 public:
   /* Constructs a new object that represents midnight on January 1st, 2000.

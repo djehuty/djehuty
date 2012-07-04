@@ -3,6 +3,8 @@ module chrono.date;
 import chrono.month;
 import chrono.weekday;
 
+/* This object represents a calendar date.
+ */
 final class Date {
 public:
   /* Constructs an object representing the first day of the year 2000.

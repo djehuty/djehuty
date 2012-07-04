@@ -1,5 +1,7 @@
 module chrono.month;
 
+/* This enumeration represents the calendar months.
+ */
 enum Month {
   January,
   February,
