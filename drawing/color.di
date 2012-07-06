@@ -124,6 +124,10 @@ public:
    */
   static Color LightGray();
 
+  /* Yields an object representing an invisible color.
+   */
+  static Color Clear();
+
   // Properties //
 
   /* The red component in the RGB colorspace. The value ranges from 0.0 to 1.0.
