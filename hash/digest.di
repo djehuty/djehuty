@@ -24,12 +24,14 @@ public:
   char[] toString();
 
   /* Compares this hash with the given hash.
+   * b: A hash to compare against.
    * Returns: 0 when the two are equal, negative when the given hash is
    *  larger, positive when the given hash is smaller.
    */
   int compare(Digest b);
 
   /* Checks for equality with the given hash.
+   * b: A hash to compare against.
    * Returns: true when the two hashes are equal, false otherwise.
    */
   bool isEqualTo(Digest b);
