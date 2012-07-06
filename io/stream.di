@@ -88,7 +88,7 @@ public:
    * length: The number of bytes to write.
    */
   void write(ubyte[] data);
-  void append(Stream data, size_t length);
+  void write(Stream data, size_t length);
 
   /* This function will read a number of bytes from the stream at the current
    *  position. The content will be copied into the given buffer. If there are
