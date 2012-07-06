@@ -54,6 +54,10 @@ public:
    */
   ulong bitsPerPixel();
 
+  /* The number of bytes that represent a pixel based on the pixel type.
+   */
+  ulong bytesPerPixel();
+
   /* The current x position.
    */
   ulong x();
