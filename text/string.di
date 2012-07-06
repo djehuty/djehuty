@@ -182,4 +182,12 @@ public:
    *  otherwise.
    */
   static bool endsWith(char[] string, char[] search);
+
+  char[] charAt(long index);
+
+  static char[] charAt(char[] string, long index);
+
+  char[] insertAt(char[] addition, long index);
+
+  static char[] insertAt(char[] string, char[] addition, long index);
 }
