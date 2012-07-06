@@ -4,7 +4,9 @@ import chrono.month;
 import chrono.weekday;
 
 /* This object represents a formating agent for a particular language
- *  and culture.
+ *  and culture. It will create localized strings for various values.
+ *  Generally, one does not create this class arbitrarily. Rather, it
+ *  is retrieved from a specific locale class. (eg. EnglishUS)
  */
 final class Locale {
 public:

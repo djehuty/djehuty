@@ -5,6 +5,9 @@ import culture.locale;
 import chrono.month;
 import chrono.weekday;
 
+/* This object represents the English locale for the United States region.
+ *  It contains methods to create localized strings for different values.
+ */
 final class EnglishUS {
 public:
   this();
