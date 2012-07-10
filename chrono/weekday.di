@@ -2,7 +2,7 @@ module chrono.weekday;
 
 /* This enumeration represents the days of the week.
  */
-enum Weekday {
+enum Weekday : uint {
   Sunday,
   Monday,
   Tuesday,
