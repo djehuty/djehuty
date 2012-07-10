@@ -68,8 +68,10 @@ public:
   
   // Methods //
 
-  void writeRGBA(uint color);
-  void writeBGRA(uint color);
+  void writeR8G8B8A8(uint color);
+  void writeB8G8R8A8(uint color);
+  void writeR16G16B16A16(ulong color);
+  void writeB16G16R16A16(ulong color);
 
   void writeRGBA(double red, double green, double blue, double alpha);
 
