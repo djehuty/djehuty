@@ -2,7 +2,7 @@ module chrono.month;
 
 /* This enumeration represents the calendar months.
  */
-enum Month {
+enum Month : uint {
   January,
   February,
   March,
