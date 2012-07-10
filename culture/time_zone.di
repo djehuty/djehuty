@@ -50,5 +50,5 @@ public:
    * Returns: The number of seconds to add to the base local time to give the
    *  normalized local time.
    */
-  long savings(long, Month, uint, uint, uint);
+  long savings(long year, Month month, uint day, uint hour, uint minute);
 }
