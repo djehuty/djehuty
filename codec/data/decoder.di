@@ -9,7 +9,7 @@ import io.pixelmap;
  */
 final class DataDecoder {
 public:
-  /* The current state of the image decoder.
+  /* The current state of the data decoder.
    */
   enum State {
     /* The decoder returns this when the data is not consistent and it can
@@ -38,7 +38,7 @@ public:
     Complete
   }
 
-  /* Constructs a new image decoder delegate object.
+  /* Constructs a new data decoder delegate object.
    * decodeFunc: The function that will decode the stream.
    * descriptionFunc: The function that will yield a string that describes
    *  the decoder.
@@ -56,8 +56,8 @@ public:
    */
   char[] description();
 
-  /* File system tags that are used to identify images encoded with a format
-   *  that can be decoded by this object.
+  /* File system tags that are used to identify data streams encoded with a
+   *  format that can be decoded by this object.
    */
   char[][] tags();
 
