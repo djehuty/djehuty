@@ -118,7 +118,7 @@ follow their guidelines.
 ### Implementation
 
 The next component may be the most obvious in our system. For every interface,
-there is at least one implementation. For the system to be useful, there will
+there is at least one *implementation*. For the system to be useful, there will
 actually be many implementations of the same interface. Only here does the
 code specialize. That is, an implementation can optimize freely as long as it
 abides by the specifications.
@@ -143,7 +143,7 @@ it will spread.
 Performance is generally not going to be major priority for most tasks. The
 ability to improve the system is important, however. Thus, as the system
 matures, we will want a method of selecting the best code for our system.
-Benchmarks are very similar to specifications in that they describe a
+*Benchmarks* are very similar to specifications in that they describe a
 situation. However, unlike specifications, they describe a workload. That is,
 they depict the module in a practical light.
 
@@ -166,7 +166,7 @@ decide which implementations to use.
 
 ### Kernel
 
-Now we can talk about the low-level stuff. Our system presents an interesting
+Now we can talk about the *low-level stuff.* Our system presents an interesting
 opportunity to throw away (well, re-purpose hopefully!) years of operating
 system and kernel overreactions. Popular kernels currently do too much. They
 are the ultimate arbiters of access, yet as far as functionality is concerned,
