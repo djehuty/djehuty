@@ -107,7 +107,7 @@ answers any other time. Even without being malicious, bugs can still
 occur and typically occur in unexpected circumstances. Human error is
 our enemy.
 
-This is fine, however. No amount of human error, curiosity, nor malevolence are
+This is fine, however. No amount of human error, curiosity, nor malevolence is
 going to collapse this system. When a bug is found in any implementation, a
 new specification can be written on any system to catch it. Any individual can
 provide a new specification. Therefore, there can be many specifications for an
@@ -203,6 +203,72 @@ impacts what constitutes a base system, which must be trusted in its
 entirety.
 
 ## Network Model
+
+The internet has provided a means of collaboration that has gone mostly
+unused by the open source community. Centralized places dominate. That is,
+code is generally located at a known location and has some arbiter that
+decides what goes in and who can access. Decentralized collaboration will
+be stressed by our system.
+
+Many network arrangements are possible. Systems can collaborate in a closed
+system, although that defeats some of the merit. There can be some connection
+to the open network where ideas leak out and flow in. However, it will be
+encouraged to have as open of a network as possible.
+
+Devices link together and may discover each other by some means. This only
+must occur when a device wishes to discover new information. Devices will then
+use the network to transfer data, code, new interfaces and specifications, etc.
+Other data can be shared as well, such as configurations; for instance network
+configurations such that when devices attach to a new local network, they can
+quickly optimize their connection.
+
+Discovery can occur at any time. Typically, this will occur when a device
+is introduced to a new environment or local network or when a device determines
+it does not know a piece of information.
+
+Trust in the information a machine receives is an important issue. Some of the
+issue has been discussed above (trust majority opinion, code verification, etc.)
+The rest can be ascertained by reputation. The machines in a network can become
+established there and can vouch for others. A new identity on a network may not
+have a good reputation to be able to share information, but can at least receive.
+
+If a machine is wrong, we lower a value that indicates our trust in it. If it is
+correct, we raise it. Over time, a network will have machines that the other
+machines will trust, and will share their trust values to new machines on that
+network. A reputation system such as this is truly optional (you could ignore the
+trust values) but it should strengthen the probabilities of correctness in the
+implementations our system propagates overall.
+
+This is a complicated situation with many solutions. Those with far more
+knowledge on trust in a network topology will come up with better solutions.
+This is certainly an aspect to our system that will evolve as networks tend to
+do.
+
+## Motivating Scenarios
+
+Our system provides a means of collaboration that goes beyond the current
+scope of the modern open source movement. You do not have to be established
+nor have a name to contribute. In a world that attaches far too much meaning
+from presumption, this collaboration can elevate the diversity of people
+contributing to the whole.
+
+Along with the increase in diversity, we should see a lowering of the barriers
+to technology. Software costs should approach zero as hardware costs continue
+to decrease. Our system can be dispatched anywhere in the world that has some
+functional access to the network at large, either by a direct wire or mailing
+a device with implementations on it that you turn on. The rest of the devices
+in what used to be a detached section of the network can now spread that payload
+among them.
+
+For instance, children will have access to educational software that
+automatically updates. Potentially access to the same quality of learning that
+every child in the world has access to. When one educator improves the system,
+all benefit.
+
+Getting devices to those communities without the infrastructure to produce them
+is the main issue. Those with far more hardware knowledge than I can predict
+solutions to this problem. The issue that our system attempts to prioritize
+is the access to computation from the software level.
 
 ## System Commands
 
