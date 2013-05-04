@@ -1,0 +1,14 @@
+struct Random {
+  state: u32
+}
+
+impl Random {
+  fn next_u32(&mut self) -> u32;
+  fn next_bounded_u32(&mut self, min:i32, max:i32) -> i32;
+  fn next_u64(&mut self) -> u64;
+  fn next_bounded_u64(&mut self, min:i64, max:i64) -> i64;
+  fn next_f32(&mut self) -> f32;
+  fn next_f64(&mut self) -> f64;
+  fn next_bool(&mut self) -> bool;
+}
+

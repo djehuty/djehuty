@@ -1,0 +1,2 @@
+pure fn isCombiningMark(c: u32) -> bool
+pure fn combine(a: u32, combiningMark: u32) -> u32

@@ -1,0 +1,15 @@
+mod chrono {
+  mod month;
+  mod weekday;
+}
+
+pub struct Date {
+  month: chrono::month::Month,
+  day:   uint,
+  year:  u64
+}
+
+impl Date {
+  pub fn isLeapYear(&self) -> bool;
+  pub fn dayOfWeek(&self) -> chrono::weekday::Weekday;
+}

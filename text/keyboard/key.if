@@ -1,0 +1,148 @@
+enum Code {
+  Invalid,
+
+  Backspace,
+  Tab,
+  Pause,
+  Escape,
+
+  PageUp,
+  PageDown,
+
+  End,
+  Home,
+
+  Left,
+  Right,
+  Up,
+  Down,
+
+  Insert,
+  Delete,
+
+  NumLock,
+  ScrollLock,
+  CapsLock,
+
+  LeftShift,
+  RightShift,
+
+  LeftControl,
+  RightControl,
+
+  LeftAlt,
+  RightAlt,
+
+  F1,
+  F2,
+  F3,
+  F4,
+  F5,
+  F6,
+  F7,
+  F8,
+  F9,
+  F10,
+  F11,
+  F12,
+  F13,
+  F14,
+  F15,
+  F16,
+
+  Return,
+  Space,
+
+  Zero,
+  One,
+  Two,
+  Three,
+  Four,
+  Five,
+  Six,
+  Seven,
+  Eight,
+  Nine,
+
+  PrintScreen,
+  SysRq,
+
+  SingleQuote,
+  Apostrophe,
+  Comma,
+  Period,
+  Foreslash,
+  Backslash,
+
+  LeftBracket,
+  RightBracket,
+
+  Semicolon,
+  Minus,
+  Equals,
+
+  A,
+  B,
+  C,
+  D,
+  E,
+  F,
+  G,
+  H,
+  I,
+  J,
+  K,
+  L,
+  M,
+  N,
+  O,
+  P,
+  Q,
+  R,
+  S,
+  T,
+  U,
+  V,
+  W,
+  X,
+  Y,
+  Z,
+
+  KeypadZero,
+  KeypadOne,
+  KeypadTwo,
+  KeypadThree,
+  KeypadFour,
+  KeypadFive,
+  KeypadSix,
+  KeypadSeven,
+  KeypadEight,
+  KeypadNine,
+
+  KeypadPlus,
+  KeypadMinus,
+  KeypadAsterisk,
+  KeypadForeslash,
+  KeypadReturn,
+  KeypadPeriod,
+
+  International,
+}
+
+struct Key {
+  code: Code,
+
+  leftAlt: bool,
+  rightAlt: bool,
+  leftControl: bool,
+  rightControl: bool,
+  leftShift: bool,
+  rightShift: bool,
+  capsLock: bool
+}
+
+trait Key {
+  pub fn alt(&self) -> bool;
+  pub fn shift(&self) -> bool;
+  pub fn control(&self) -> bool;
+}

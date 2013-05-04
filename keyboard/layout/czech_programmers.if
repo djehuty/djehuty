@@ -1,0 +1,5 @@
+mod keyboard {
+  mod key;
+}
+
+pub fn translate(key: Key, dead: u32) -> u32;

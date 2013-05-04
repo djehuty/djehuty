@@ -1,0 +1,20 @@
+pub struct Time {
+  microseconds: u64,
+}
+
+impl Time {
+  pub fn new(hour: u64, minute: u8, second: u8, microsecond: u32) -> Time;
+  pub fn hour(&self) -> u64;
+  pub fn minute(&self) -> u64;
+  pub fn second(&self) -> u64;
+  pub fn millisecond(&self) -> u64;
+  pub fn microsecond(&self) -> u64;
+  pub fn hours(&self) -> u64;
+  pub fn minutes(&self) -> u64;
+  pub fn seconds(&self) -> u64;
+  pub fn milliseconds(&self) -> u64;
+  pub fn add(&self, b: Time) -> Time;
+  pub fn subtract(&self, b: Time) -> Time;
+  pub fn compare(&self, b: Time) -> int;
+  pub fn equals(&self, b: Time) -> bool;
+}

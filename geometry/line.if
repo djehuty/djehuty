@@ -1,0 +1,11 @@
+use geometry::point::Point;
+
+struct Line {
+  start: Point,
+  end:   Point
+}
+
+impl Line {
+  fn magnitude(&self) -> float;
+  fn intercepts(&self, point: Point) -> bool;
+}

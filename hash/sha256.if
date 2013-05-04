@@ -1,0 +1,4 @@
+use hash::digest::*;
+
+pub fn hash_string(str: &str) -> Digest;
+pub fn hash(data: &[u8]) -> Digest;

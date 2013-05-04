@@ -1,0 +1,4 @@
+fn abs_f64(x: f64) -> f64;
+fn abs_f32(x: f32) -> f32;
+fn abs_i64(x: i64) -> i64;
+fn abs_i32(x: i32) -> i32;

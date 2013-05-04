@@ -1,0 +1,21 @@
+| Determines if the given set of character codes is a legal utf8 sequence.
+| Returns: Will yield true when the given set of character codes is a legal utf8 sequence.
+| c: The set of character codes.
+pure fn isLegalChar(c: &[const u8]) -> bool
+
+bool isLegalChar(ubyte[] c);                       // D
+int  isLegalChar(unsigned char* c, size_t length); // C
+bool isLegalChar(unsigned char* c, size_t length); // C++
+bool isLegalChar(byte[] c);                        // Java
+isLegalChar :: [Byte] -> Bool                      // Haskell
+def  isLegalChar(c)                                // ruby
+function isLegalChar(c);                           // javascript
+
+// Duck typed languages will require runtime type checking... but they are still unsafe.
+
+pure fn isLegal(s: &[const u8]) -> bool
+pure fn utf16Length(s: &[const u8]) -> u64
+pure fn utf32Length(s: &[const u8]) -> u64
+fn toUtf16(s: &[const u8], r: &[mut u16])
+fn toUtf32(s: &[const u8], r: &[mut u32])
+pure fn firstUtf32Char(s: &[const u8]) -> u32

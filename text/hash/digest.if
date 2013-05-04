@@ -1,0 +1,7 @@
+pub struct Digest {
+  data: ~[u32]
+}
+
+trait Digest {
+  pub fn to_string(&self) -> ~str;
+}

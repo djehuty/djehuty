@@ -1,0 +1,14 @@
+use geometry::point::*
+use geometry::line::*
+
+struct Rectangle {
+  top_left: Point,
+  bottom_right: Point
+}
+
+trait Rectangle {
+  fn left_edge(&self) -> Line;
+  fn right_edge(&self) -> Line;
+  fn bottom_edge(&self) -> Line;
+  fn top_edge(&self) -> Line;
+}

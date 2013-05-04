@@ -1,0 +1,18 @@
+enum Color {
+  ColorRGBA { alpha: f64, red:f64, green:f64,      blue:f64 },
+  ColorHSLA { alpha: f64, hue:f64, saturation:f64, luminance:f64 }
+}
+
+impl Color;
+  fn hsla_to_rgba(alpha: f64, h: f64, s: f64, l: f64) -> Color;
+  fn rgba_to_hsla(alpha: f64, r: f64, g: f64, b: f64) -> Color;
+  fn to_hsla(&self) -> Color;
+  fn to_rgba(&self) -> Color;
+  fn red(&self) -> f64;
+  fn green(&self) -> f64;
+  fn blue(&self) -> f64;
+  fn hue(&self) -> f64;
+  fn saturation(&self) -> f64;
+  fn luminance(&self) -> f64;
+  fn alpha(&self) -> f64;
+}

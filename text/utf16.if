@@ -1,0 +1,7 @@
+pure fn isLegalChar(c: &[const u16]) -> bool
+pure fn isLegal(s: &[const u16]) -> bool
+pure fn utf8Length(s: &[const u16]) -> u64
+pure fn utf32Length(s: &[const u16]) -> u64
+fn toUtf8(s: &[const u16], r: &[mut u8])
+fn toUtf32(s: &[const u16], r: &[mut u32])
+pure fn firstUtf32Char(s: &[const u8]) -> u32

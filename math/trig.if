@@ -1,0 +1,2 @@
+fn sin(x: f64) -> f64;
+fn cos(x: f64) -> f64;

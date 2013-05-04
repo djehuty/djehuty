@@ -1,0 +1,15 @@
+use geometry::point::*;
+use geometry::line::*;
+use geometry::rectangle::*;
+
+struct Circle {
+  center: Point,
+  radius: float
+}
+
+trait Circle {
+  fn intersects_rectangle(&self, rectangle: Rectangle) -> bool;
+  fn intersects_circle(&self, circle: Circle) -> bool;
+  fn intersects_line(&self, line: Line) -> bool;
+  fn intersects_point(&self, point: Point) -> bool;
+}
