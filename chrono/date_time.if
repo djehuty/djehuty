@@ -1,0 +1,25 @@
+mod chrono {
+  mod month;
+  mod weekday;
+}
+
+struct DateTime {
+  month:        chrono::month::Month,
+  day:          uint,
+  year:         u64,
+  microseconds: u64
+}
+
+impl DateTime {
+  fn isLeapYear(&self) -> bool;
+  fn dayOfWeek(&self) -> chrono::weekday::Weekday;
+  fn hour(&self) -> u64;
+  fn minute(&self) -> u64;
+  fn second(&self) -> u64;
+  fn millisecond(&self) -> u64;
+  fn microsecond(&self) -> u64;
+  fn hours(&self) -> u64;
+  fn minutes(&self) -> u64;
+  fn seconds(&self) -> u64;
+  fn milliseconds(&self) -> u64;
+}
