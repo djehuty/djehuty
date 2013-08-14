@@ -1,0 +1,17 @@
+struct File {
+  descriptor: u64
+}
+
+fn create(filename: &str) -> ~io::stream::Result;
+fn open(filename: &str) -> ~io::stream::Result;
+
+impl File {
+  fn readInto(&self, buffer: &mut [u8]) -> bool;
+  fn read(&self, amount: u64) -> ~[u8];
+  fn write(&self, data: &[u8]);
+  fn append(&self, data: &[u8]);
+  fn seek(&self, amount: i64);
+  fn length(&self) -> u64;
+  fn available(&self) -> u64;
+  fn position(&self) -> u64;
+}
